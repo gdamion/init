@@ -1,0 +1,1 @@
+whois slash16.org | awk '/Name Server/' - DNS provider of AWS is Amazon

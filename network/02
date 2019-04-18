@@ -1,1 +1,2 @@
 ifconfig en0 | awk '/broadcast/ {print $6}'
+ping -c 2 192.168.31.255 | awk '/from/ {print $4}' | sort

@@ -1,0 +1,1 @@
+nslookup slash16.org | awk '/Server/ {print $2}'
