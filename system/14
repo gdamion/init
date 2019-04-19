@@ -1,0 +1,2 @@
+su -
+tail -f /var/log/syslog &
