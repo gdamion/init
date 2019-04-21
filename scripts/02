@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ -n "$1" ]
+then
+sudo killall -u $1
+sudo deluser --remove-all-files -f $1
+else
+echo "User doesn't exist / wrong input"
+fi

@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if [ $# -eq 2 ];
+then
+for file in $2/*
+do
+echo "$file: "
+search=`grep $1 $file`
+if [ -z $search ];
+then
+echo "Nothing found"
+else
+echo $search
+fi
+echo ""
+done > search.txt
+else
+echo "Wrong input"
+fi
