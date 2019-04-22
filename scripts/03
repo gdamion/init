@@ -6,7 +6,7 @@ for file in $2/*
 do
 echo "$file: "
 search=`grep $1 $file`
-if [ -z $search ];
+if [ -z "$search" ];
 then
 echo "Nothing found"
 else
