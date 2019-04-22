@@ -3,7 +3,7 @@
 
 #SSH session (from Mac):
 #1) In /etc/ssh/sshd_config file of VM system add/change rule "PermitRootLogin yes"
-to be able to connect to client's root
+#to be able to connect to client's root
 #2) Reload sshd in VM with systemctl restart sshd, enter root pwd
 #3) Now on host enter sudo ssh root@<ip of VM>, enter local root pwd, than VM root pwd
 #4) Now we are connected as a root of VM system, and therefore able to mange user accounts
